@@ -4,7 +4,7 @@
 @import "compass/css3/transform";
 @import "foundation_and_overrides";
 
-$bio-background-color: red;
+$bio-background-color: $primary-color;
 $bio-foreground-color: #000;
 $profile-image-size: 200px;
 $featured-content-header-font-size: 1.6em;

@@ -1,12 +1,12 @@
 ---
-title: Lorem Ipsum
+title: 3,2,1...Content
 date: 2012-01-01
 tags: 
-- example
-- latin
+- blogging
+- github
 ---
 
-This is an example article. You probably want to delete it and write your own articles!
+This is a place-holder article. I do have content, but for the moment I am focusing on the structure of this site.  You may now return to your regularly scheduled programming.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget lorem quis eros dictum dictum a vitae purus. Quisque non elit sit amet turpis ullamcorper blandit. 
 Suspendisse vitae turpis et enim feugiat ullamcorper at non turpis. Vestibulum posuere, eros eget vulputate faucibus, metus massa congue velit, non pulvinar tortor risus 

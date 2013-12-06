@@ -137,19 +137,23 @@ aside {
 
 // Active menu selection.
 .top-bar-section ul li.active > a {
-  color: $primary-color;
+  color: $active-color;
 }
 
 body.portfolio {
-  .top-bar-section ul li.portfolio > a { color: $primary-color; }
+  .top-bar-section ul li.portfolio > a { color: $active-color; }
 }
 
 body.resume {
-  .top-bar-section ul li.resume > a { color: $primary-color; }
+  .top-bar-section ul li.resume > a { color: $active-color; }
+}
+
+body.about {
+  .top-bar-section ul li.about > a { color: $active-color; }
 }
 
 body.blog {
-  .top-bar-section ul li.blog > a { color: $primary-color; }
+  .top-bar-section ul li.blog > a { color: $active-color; }
 }
 
 .main {
