@@ -123,7 +123,7 @@
 <pre class="highlight text">rails new quick_blog -T
 rails g scaffold Post title body:text
 rake db:migrate
--Adds HTTP Basic authentication to put a password on creating/indexing actions
+//Add HTTP Basic authentication for CRUD actions for posts
 rails generate resource Comment post:references body:text
 </pre>
 <p>Then it provides good info to publish your blog using Heroku</p>
@@ -200,7 +200,8 @@ heroku domains:add www.codehats.co
 <pre class="highlight text">bundle exec middleman
 == The Middleman is loading
 Listen error: unable to monitor directories for changes.
-Please head to https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers
+Please head to 
+https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers
 for information on how to solve this issue.
 </pre>
 <p>The original Gemfile was missing some gems needed to run on a linux system.  I needed to include</p>
