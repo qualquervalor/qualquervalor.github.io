@@ -5,41 +5,170 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2012-01-01T06:00:00Z</updated>
+  <updated>2013-12-30T22:04:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
   <entry>
-    <title>3,2,1...Content</title>
-    <link rel="alternate" href="/blog/2012/01/01/example-article.html"/>
-    <id>/blog/2012/01/01/example-article.html</id>
-    <published>2012-01-01T06:00:00Z</published>
-    <updated>2012-01-01T06:00:00Z</updated>
+    <title>The process of creating a blog</title>
+    <link rel="alternate" href="/blog/2013/12/30/blogging.html"/>
+    <id>/blog/2013/12/30/blogging.html</id>
+    <published>2013-12-30T22:04:00Z</published>
+    <updated>2013-12-30T22:04:00Z</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <summary type="html">&lt;p&gt;This is a place-holder article. I do have content, but for the moment I am focusing on the structure of this site.  You may now return to your regularly scheduled programming.&lt;/p&gt;
+    <summary type="html">&lt;p&gt;As part of the MakerSquare program they encourage you to blog about the experience.  In order to follow their recommendations, I would need to set up a blog.   I wanted to own the whole process,  meaning I didn’t want to use WordPress or Tumbler. ...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;As part of the MakerSquare program they encourage you to blog about the experience.  In order to follow their recommendations, I would need to set up a blog.   I wanted to own the whole process,  meaning I didn&amp;rsquo;t want to use WordPress or Tumbler.  While that definitely would have sped the process along it didn&amp;rsquo;t feel like the programmer&amp;rsquo;s approach to the process.  Since I was learning how to be a web developer I felt I should make the effort to use some of the tools I was learning.&lt;/p&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget lorem quis eros dictum dictum a vitae purus. Quisque non elit sit amet turpis ullamcorper blandit. 
-Suspendisse vitae turpis et enim feugiat ullamcorper at non turpis. Vestibulum posuere, eros eget vulputate faucibus, metus massa congue velit, non pulvinar tortor risus 
-ut enim. Pellentesque lectus ligula, vehicula luctus volutpat in, convallis quis ante. Proin non odio eu orci feugiat feugiat. Mauris molestie nisi non venenatis molestie. 
-Pellentesque facilisis eros ut ultrices ultrices.
-</summary>
-    <content type="html">&lt;p&gt;This is a place-holder article. I do have content, but for the moment I am focusing on the structure of this site.  You may now return to your regularly scheduled programming.&lt;/p&gt;
+&lt;h3&gt;Sinatra Blog&lt;/h3&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget lorem quis eros dictum dictum a vitae purus. Quisque non elit sit amet turpis ullamcorper blandit. 
-Suspendisse vitae turpis et enim feugiat ullamcorper at non turpis. Vestibulum posuere, eros eget vulputate faucibus, metus massa congue velit, non pulvinar tortor risus 
-ut enim. Pellentesque lectus ligula, vehicula luctus volutpat in, convallis quis ante. Proin non odio eu orci feugiat feugiat. Mauris molestie nisi non venenatis molestie. 
-Pellentesque facilisis eros ut ultrices ultrices.
-&lt;/p&gt;
-&lt;pre class="highlight ruby"&gt;&lt;span class="k"&gt;class &lt;/span&gt;&lt;span class="nc"&gt;Hello&lt;/span&gt;
-  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="n"&gt;foo&lt;/span&gt;
-    &lt;span class="s2"&gt;&amp;quot;I am a code segment!&amp;quot;&lt;/span&gt;
-  &lt;span class="k"&gt;end&lt;/span&gt;
-&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;p&gt;I had several false starts in the creation effort.  I was both new to the process of blogging and also new to all the tools I wanted to utilize.  And thus I made a lot of mistakes and started over several times.  As a novice, I just goggled what I wanted to accomplish and started following the paths others had taken.  Some of these aren&amp;rsquo;t directly related to creating blogs but they were helpful beginner tutorials for working with Ruby gems that I wanted to try out.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="http://danneu.com/posts/15-a-simple-blog-with-sinatra-and-active-record-some-useful-tools/"&gt;Try to create a blog with Sinatra and ActiveRecord&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="http://net.tutsplus.com/sessions/singing-with-sinatra/"&gt;Build a simple app with Sinatra&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="http://samuelstern.wordpress.com/2012/11/28/making-a-simple-database-driven-website-with-sinatra-and-heroku/"&gt;Making a simple, database-driven website with Sinatra and Heroku&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="http://robdodson.me/blog/2012/04/27/how-to-setup-postgresql-for-rails-and-heroku/"&gt;How to Setup PostgreSQL for Rails and Heroku&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;At this point, I had created the first of my blogs based on the preceding links.  It only used a few gems : sinatra, activerecord, sinatra-activerecord, and pg.  I had a few views and models representing the pages that I wanted.  It wasn&amp;rsquo;t pretty to look at it but it fit the bill.  My posts were backed by a database and displayed with an erb loop.  The final piece of this puzzle was that I had no simple way to get new entries into the database.  I could envision a future where I would try to write all my posts straight into Postgres using pgAdmin.
+&lt;img title="Sinatra blog backed by postgres" alt="Sinatra blog" width="756" height="532" src="/images/sinatra_blog.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;The motivation for starting with Sinatra rather than Rails was that Sinatra was simpler.  I had done at least one lesson on using Sinatra and Rails was still magic to me.  Rails gives you a lot out of the box that you may never touch, where as with Sinatra you only code what you need.  If you are concerned about the size of your site, you might want to consider Sinatra instead of Rails. &lt;/p&gt;
+
+&lt;h2&gt;15 Minute Rails Blog&lt;/h2&gt;
+
+&lt;p&gt;After working through the various Sinatra tutorials and created a blog based on them, I turned my eyes towards Rails.  I had heard about a Rails tutorial to create a blog in 15 minutes.  (The specific one I heard referenced was by David Heinemeier Hansson, the creator of Rails.)  I now believe there are several takes on the 15 minute blog but here is the one I tried.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.reinteractive.net/posts/32-ruby-on-rails-3-2-blog-in-15-minutes-step-by-step"&gt;Reinteractive&amp;rsquo;s 15 minute blog&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Part 1&lt;/p&gt;
+&lt;pre class="highlight text"&gt;rails new quick_blog -T
+rails g scaffold Post title body:text
+rake db:migrate
+-Adds HTTP Basic authentication to put a password on creating/indexing actions
+rails generate resource Comment post:references body:text
 &lt;/pre&gt;
-&lt;p&gt;Nam commodo hendrerit scelerisque. Ut tristique lacus lobortis neque rhoncus, ut tempor enim mattis. Suspendisse vel eleifend quam. Suspendisse luctus nisl eget elit euismod, 
-in sodales metus blandit. Mauris nisi eros, venenatis a sagittis id, dictum id arcu. Nam tempus pulvinar ante at semper. Donec tincidunt dolor ac sem tempor laoreet.&lt;/p&gt;
+&lt;p&gt;Then it provides good info to publish your blog using Heroku&lt;/p&gt;
+&lt;pre class="highlight text"&gt;heroku create
+git push heroku master
+heroku run rake db:setup db:migrate
+&lt;/pre&gt;
+&lt;p&gt;Here I have only included an outline of some of the commands used to give you an idea of how to get a rails app off the ground.  Now this is a good tutorial about how to use Rails to create a site, though the final product is not something I wanted to use continuously.  I didn&amp;rsquo;t like that there was a log in on the site using HTTP basic authentication to create post.  In addition, the free accounts on Heroku can often have a noticeable delay when accessing your site. Heroku has a policy of idling your web process after an hour of inactivity, essentially powering down your website until the next request comes along.  (&lt;a href="https://coderwall.com/p/u0x3nw"&gt;Tips to avoid this.&lt;/a&gt;).  You can see I didn&amp;rsquo;t try to add any styling to the 15 min blog.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Un-stylized 15 minute Rails blog" alt="A 15 minute Rails blog" width="686" height="560" src="/images/rails_blog.jpg" /&gt;&lt;/p&gt;
+
+&lt;h4&gt;Errors&lt;/h4&gt;
+
+&lt;p&gt;I did have some hiccups during the process
+     1.  Initially, my database did not load correctly.  This had nothing to do with the instructions provided but I had previously created an environment variable called DATABASE&lt;em&gt;URL to work with a Heroku app sometime in the recent past.  I needed to issue the following on the command line &amp;lsquo;unset DATABASE&lt;/em&gt;URL&amp;rsquo; so that the correct database was used.  This was a tricky bug to uncover because normally Rails uses the information set in database.yml to load the correct database.  But if DATABASE_URL is set as an environment variable, it is used instead of the value set in database.yml.&lt;/p&gt;
+
+&lt;p&gt;In all honesty,  on first reading I missed that the site had a series of follow up posts for building on top of the original 15-minute blog.  I think the remaining 5 post in the series are worth reading.  Part 2 does AJAX commenting with unobtrusive JavaScript, creating an RSS Atom feed, styling with Zurb Foundation.  Part 3 adds testing with RSpec, Capybara. Part 4 adds ActiveAdmin and Markdown support. Part 5 manages database structure through migrations and adding published state.  Part 6 introduces the assets folder, how to make static pages and understanding routes, and customizing your application error pages.  Now if you go through all 6 steps you will be spending a considerably longer time than 15 minutes.  The first 15 minutes shows you that yes you can get a Rails app up and functional in very little time.  The additional posts make your blog more appealing to look at and use, while teaching you several cool techniques.&lt;/p&gt;
+
+&lt;h3&gt;Another Day, Another Blog : Octopress&lt;/h3&gt;
+
+&lt;p&gt;Now, I had created two basic blogs but both seemed to be somewhat wanting.  The process of going through the tutorial was good but ultimately I wanted to have a final product with which I could continue.  I asked one of the former students at MakerSquare for suggestions and they told me to check out &lt;a href="http://octopress.org"&gt;Octopress&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Octopress is a framework designed by Brandon Mathis for Jekyll, the blog aware static site generator that powers Github Pages. To start blogging with Jekyll, you have to write your own HTML templates, CSS, JavaScripts and set up your configuration. But with Octopress all of that is already taken care of, simply clone or fork Octopress, install dependencies and the theme, and you&amp;rsquo;re set.&lt;/p&gt;
+
+&lt;p&gt;Octopress felt really promising - their tag line is a blogging framework for hackers.  That sounded exactly like what I was looking for.  So, I had already cut my teeth on setting up the first two blogs.  Now I was using a framework to generate most of the underlying code.  Why re-invent the wheel?  I read through the documentation and in short order had created a third blog.  This time I even wrote a real post to go with it.  I was using git, ruby, javascript, yaml, css, html, and hosting it all on a web server.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="The Octopress blog." alt="The Octopress blog" width="775" height="543" src="/images/octopress_blog.jpg" /&gt;&lt;/p&gt;
+
+&lt;h4&gt;Errors&lt;/h4&gt;
+
+&lt;p&gt;Octopress provides rake task to create new blog posts and new pages.&lt;/p&gt;
+
+&lt;p&gt;Syntax&lt;/p&gt;
+&lt;pre class="highlight text"&gt;rake new_post[“title”]
+and
+rake new_page[super-awesome/page.html]
+&lt;/pre&gt;
+&lt;p&gt;On my working setup, I found that from some combination of rake syntax and using the Z shell did not work correctly together. The work around I used was to put everything after the rake command in quotes, like so:&lt;/p&gt;
+&lt;pre class="highlight text"&gt;rake “new_post[title]”
+and
+rake “new_page[super-awesome/page.html]”
+&lt;/pre&gt;
+&lt;p&gt;Also, avoid passing titles with punctuation to the rake command. The punctuation is not always parsed correctly and you can manually edit the displayed titles after the fact.&lt;/p&gt;
+
+&lt;p&gt;For deployment, the documentation offers up three suggestions: Github pages, Heroku, and Rsync.  As I had already had some experiences using Heroku I went with that route.  I was even able to get the new domain name that I secured from .CO connected.  This felt like and all around win.  I was blogging like a hacker with my own domain name.&lt;/p&gt;
+&lt;pre class="highlight text"&gt;heroku create &amp;lt;my-app-name&amp;gt;
+git push heroku master
+heroku domains:add www.codehats.co
+&lt;/pre&gt;
+&lt;h3&gt;The Final Blog? : Middleman&lt;/h3&gt;
+
+&lt;p&gt;The next day, I met with my mentor, Matt Buck, at MakerSquare and discussed my blog creation efforts.  His opinion was that Octopress was near its end of life.  If you check the source on Github its last release was almost two years ago.  He suggested trying Middleman.  Besides having a more active release schedule, it also support tags out of the box.  It did not take much convincing for me to start over again.  My mentor even had a personal website template based on Middleman and Zurb Foundation.
+&lt;a href="https://github.com/techpeace/personal-site-template"&gt;Matt Buck&amp;rsquo;s Personal Website Template&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Middleman is a static site generator based on Sinatra. It incorporates dozens of templating languages (Haml, Sass, Compass, Slim, CoffeeScript, and more). It makes minification, compression, cache busting, Yaml data (and more) an easy part of your development cycle.&lt;/p&gt;
+
+&lt;p&gt;This is the typical development cycle with Middleman:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Run Middleman init projectname&lt;/li&gt;
+&lt;li&gt;Start the server with middleman server&lt;/li&gt;
+&lt;li&gt;Modify the files in the directory projectname while viewing them in your browser at http://localhost:4567&lt;/li&gt;
+&lt;li&gt;When you&amp;rsquo;re happy with the files, run middleman build&lt;/li&gt;
+&lt;li&gt;Copy the generated static files from projectname/build to your webserver&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Having the server available while developing turns out to be critical as it allows quick review of changes (including automatic refresh on Firefox with the right plugin). This isn&amp;rsquo;t as much of an issue with &amp;ldquo;normal&amp;rdquo; static site generators, but when you start adding partials, SCSS, Compass and the other goodies, that Middleman supports, server mode is invaluable.  Meaning that it can be very slow to build the site.&lt;/p&gt;
+
+&lt;p&gt;It was also suggested to use GitHub pages rather than Heroku to host the new site.  The reason being as stated above that Heroku will idle down your web process delaying the loading of the site for your readers.  If you have a Github account then you have access to a Github Page of your own.  It actually took several minutes to understand what I needed to do to start with Github pages.  It seems like they just assume you know how to start.  I had to search for an &lt;a href="http://readwrite.com/2013/11/27/github-pages-explained#awesm=~op7e5ZKmNCgi9h"&gt;outside explanation&lt;/a&gt; on how to use their services.&lt;/p&gt;
+
+&lt;p&gt;It was the equivalant of the push any key.  The first step is to create a repo called username.github.io.  This simple command was not obvious from reading the http://pages.github.com or their help.&lt;/p&gt;
+
+&lt;p&gt;Matt&amp;rsquo;s personal-site-template is easy to work with.  Just edit the default fields with your relevant details and add some CSS style to customize it.  But no process is pain free.  I ran into some errors with the suggested setup:&lt;/p&gt;
+&lt;pre class="highlight text"&gt;bundle exec middleman
+== The Middleman is loading
+Listen error: unable to monitor directories for changes.
+Please head to https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers
+for information on how to solve this issue.
+&lt;/pre&gt;
+&lt;p&gt;The original Gemfile was missing some gems needed to run on a linux system.  I needed to include&lt;/p&gt;
+&lt;pre class="highlight text"&gt;gem &amp;quot;rb-inotify&amp;quot;
+gem &amp;quot;therubyracer&amp;quot;
+&lt;/pre&gt;
+&lt;p&gt;After which, I still received the same Listen error.   This error was resolved by just following the suggestion of the warning message to increase the number of inotify watchers on my system.  I ran the following to see how many files I was asking it to watch:&lt;/p&gt;
+&lt;pre class="highlight text"&gt;ls -lR | grep ^- | wc -l
+32557
+&lt;/pre&gt;
+&lt;p&gt;Then I looked up the current number of watchers and increased it&amp;rsquo;s size in order to handle the number of files that were in my app.&lt;/p&gt;
+&lt;pre class="highlight text"&gt;cat /proc/sys/fs/inotify/max_user_watches
+8192
+sudo sysctl -w fs.inotify.max_user_watches=37000
+&lt;/pre&gt;
+&lt;p&gt;But why did I have so many files?  I&amp;rsquo;m not that prolific of a blogger.  The problem was that the number of files on my system kept growing as I experimented with bundling different gems. Almost all of those 30,000 files were under my vendor folder.  Running  &amp;lsquo;bundle clean&amp;rsquo; helped get rid of a significant number (14,000).  It still felt like I had too many files.  So I blew away my vendor folder all together and just ran &amp;lsquo;bundle install&amp;rsquo; anew.  The result was that there were 18,494 files, which still seems like a lot.  Taking into account the number of files that were in my app, I increased the inotify.max&lt;em&gt;user&lt;/em&gt;watches accordingly.  This allows middleman server to run and respond to changes as you make them.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="The Middleman based blog" alt="A middleman blog" width="773" height="601" src="/images/middleman_blog.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;After all is said and done, I&amp;rsquo;m generally pleased with the look of this site.  The pages have a mix of html, embedded ruby, and some yaml.  The process of creating the blog was more interesting to me currently than creating content for it.  Granted I have yet to try to create a lot of content.  My goal here was to show you the process I went through.  Maybe some of my missteps will help guide you. &lt;/p&gt;
+
+&lt;h2&gt;The Future Blog : Ghost&lt;/h2&gt;
+
+&lt;p&gt;And finally, because people never stopped recommending different approaches, it was also suggested to check out &lt;a href="https://ghost.org/"&gt;Ghost&lt;/a&gt;.  Ghost is a very new blogging platform, released as of October 2013. I&amp;rsquo;m not ready to start again just yet but maybe you will give it a try.&lt;/p&gt;
+
+&lt;p&gt;Cheers and Happy Coding.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>First</title>
+    <link rel="alternate" href="/blog/2013/12/22/first.html"/>
+    <id>/blog/2013/12/22/first.html</id>
+    <published>2013-12-22T06:25:00Z</published>
+    <updated>2013-12-22T06:25:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p&gt;There is always a first post.  This might as well be it.  If you find yourself here congratulations there is no more to read. I apology for the spelling errors in advance.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="It's not the best post but it will do." alt="A post" width="194" height="259" src="/images/post.jpg" /&gt;&lt;/p&gt;
+</summary>
+    <content type="html">&lt;p&gt;There is always a first post.  This might as well be it.  If you find yourself here congratulations there is no more to read. I apology for the spelling errors in advance.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="It's not the best post but it will do." alt="A post" width="194" height="259" src="/images/post.jpg" /&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>

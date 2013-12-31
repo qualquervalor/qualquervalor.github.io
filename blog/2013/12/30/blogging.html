@@ -1,0 +1,356 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="copyright" content="" />
+    <link type="text/plain" rel="author" href="/humans.txt" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>The process of creating a blog | CodeHats</title>
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+    
+
+    
+
+    <script src="/javascripts/modernizr.js" type="text/javascript"></script>
+
+    
+  </head>
+  <body class="blog blog_2013 blog_2013_12 blog_2013_12_30 blog_2013_12_30_blogging">
+    
+    <div id="root">  
+      <!-- Logo & Top Nav -->
+      <nav class="top-bar">
+        <ul class="title-area">
+          <!-- Title Area -->
+          <li class="name">
+            <h1><a href="/">CodeHats</a></h1>
+          </li>
+          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+        <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="right">
+          
+          
+                  <li>
+          <a href='http://twitter.com/QualquerValor1'>
+            <span class='hide-for-small'><i class='icon-twitter'></i>
+            </span><span class='show-for-small'>Twitter</span>
+          </a>
+        </li>
+
+                  <li>
+          <a href='http://linkedin.com/in/chrisrhenney'>
+            <span class='hide-for-small'><i class='icon-linkedin'></i>
+            </span><span class='show-for-small'>LinkedIn</span>
+          </a>
+        </li>
+
+              
+                  <li>
+          <a href='http://github.com/qualquervalor'>
+            <span class='hide-for-small'><i class='icon-github'></i>
+            </span><span class='show-for-small'>Github</span>
+          </a>
+        </li>
+
+          <li class="divider"></li>
+          <li class="portfolio"><a href="/portfolio.html">Portfolio</a></li>
+          <li class="divider"></li>
+          
+            <li class="resume"><a href="/ChrisHenneyResume2013.pdf">Résumé</a></li>
+            <li class="divider"></li>
+          
+          <li class="about"><a href="/about.html">About</a></li>
+          <li class="blog"><a href="/blog">Log</a></li>
+        </ul>
+      </nav>
+      <!-- End Header and Nav -->
+
+      <!-- Main page container -->
+
+      <div class="main">
+        <div class="content">
+            <div class="row">
+  <article class="small-12 large-9 columns left">
+    <h3>
+      
+        The process of creating a blog
+      
+    </h3>
+
+    
+      <p>As part of the MakerSquare program they encourage you to blog about the experience.  In order to follow their recommendations, I would need to set up a blog.   I wanted to own the whole process,  meaning I didn&rsquo;t want to use WordPress or Tumbler.  While that definitely would have sped the process along it didn&rsquo;t feel like the programmer&rsquo;s approach to the process.  Since I was learning how to be a web developer I felt I should make the effort to use some of the tools I was learning.</p>
+
+<h3>Sinatra Blog</h3>
+
+<p>I had several false starts in the creation effort.  I was both new to the process of blogging and also new to all the tools I wanted to utilize.  And thus I made a lot of mistakes and started over several times.  As a novice, I just goggled what I wanted to accomplish and started following the paths others had taken.  Some of these aren&rsquo;t directly related to creating blogs but they were helpful beginner tutorials for working with Ruby gems that I wanted to try out.</p>
+
+<ol>
+<li><p><a href="http://danneu.com/posts/15-a-simple-blog-with-sinatra-and-active-record-some-useful-tools/">Try to create a blog with Sinatra and ActiveRecord</a></p></li>
+<li><p><a href="http://net.tutsplus.com/sessions/singing-with-sinatra/">Build a simple app with Sinatra</a></p></li>
+<li><p><a href="http://samuelstern.wordpress.com/2012/11/28/making-a-simple-database-driven-website-with-sinatra-and-heroku/">Making a simple, database-driven website with Sinatra and Heroku</a></p></li>
+<li><p><a href="http://robdodson.me/blog/2012/04/27/how-to-setup-postgresql-for-rails-and-heroku/">How to Setup PostgreSQL for Rails and Heroku</a></p></li>
+</ol>
+
+<p>At this point, I had created the first of my blogs based on the preceding links.  It only used a few gems : sinatra, activerecord, sinatra-activerecord, and pg.  I had a few views and models representing the pages that I wanted.  It wasn&rsquo;t pretty to look at it but it fit the bill.  My posts were backed by a database and displayed with an erb loop.  The final piece of this puzzle was that I had no simple way to get new entries into the database.  I could envision a future where I would try to write all my posts straight into Postgres using pgAdmin.
+<img title="Sinatra blog backed by postgres" alt="Sinatra blog" width="756" height="532" src="/images/sinatra_blog.jpg" /></p>
+
+<p>The motivation for starting with Sinatra rather than Rails was that Sinatra was simpler.  I had done at least one lesson on using Sinatra and Rails was still magic to me.  Rails gives you a lot out of the box that you may never touch, where as with Sinatra you only code what you need.  If you are concerned about the size of your site, you might want to consider Sinatra instead of Rails. </p>
+
+<h2>15 Minute Rails Blog</h2>
+
+<p>After working through the various Sinatra tutorials and created a blog based on them, I turned my eyes towards Rails.  I had heard about a Rails tutorial to create a blog in 15 minutes.  (The specific one I heard referenced was by David Heinemeier Hansson, the creator of Rails.)  I now believe there are several takes on the 15 minute blog but here is the one I tried.</p>
+
+<p><a href="http://www.reinteractive.net/posts/32-ruby-on-rails-3-2-blog-in-15-minutes-step-by-step">Reinteractive&rsquo;s 15 minute blog</a></p>
+
+<p>Part 1</p>
+<pre class="highlight text">rails new quick_blog -T
+rails g scaffold Post title body:text
+rake db:migrate
+-Adds HTTP Basic authentication to put a password on creating/indexing actions
+rails generate resource Comment post:references body:text
+</pre>
+<p>Then it provides good info to publish your blog using Heroku</p>
+<pre class="highlight text">heroku create
+git push heroku master
+heroku run rake db:setup db:migrate
+</pre>
+<p>Here I have only included an outline of some of the commands used to give you an idea of how to get a rails app off the ground.  Now this is a good tutorial about how to use Rails to create a site, though the final product is not something I wanted to use continuously.  I didn&rsquo;t like that there was a log in on the site using HTTP basic authentication to create post.  In addition, the free accounts on Heroku can often have a noticeable delay when accessing your site. Heroku has a policy of idling your web process after an hour of inactivity, essentially powering down your website until the next request comes along.  (<a href="https://coderwall.com/p/u0x3nw">Tips to avoid this.</a>).  You can see I didn&rsquo;t try to add any styling to the 15 min blog.</p>
+
+<p><img title="Un-stylized 15 minute Rails blog" alt="A 15 minute Rails blog" width="686" height="560" src="/images/rails_blog.jpg" /></p>
+
+<h4>Errors</h4>
+
+<p>I did have some hiccups during the process
+     1.  Initially, my database did not load correctly.  This had nothing to do with the instructions provided but I had previously created an environment variable called DATABASE<em>URL to work with a Heroku app sometime in the recent past.  I needed to issue the following on the command line &lsquo;unset DATABASE</em>URL&rsquo; so that the correct database was used.  This was a tricky bug to uncover because normally Rails uses the information set in database.yml to load the correct database.  But if DATABASE_URL is set as an environment variable, it is used instead of the value set in database.yml.</p>
+
+<p>In all honesty,  on first reading I missed that the site had a series of follow up posts for building on top of the original 15-minute blog.  I think the remaining 5 post in the series are worth reading.  Part 2 does AJAX commenting with unobtrusive JavaScript, creating an RSS Atom feed, styling with Zurb Foundation.  Part 3 adds testing with RSpec, Capybara. Part 4 adds ActiveAdmin and Markdown support. Part 5 manages database structure through migrations and adding published state.  Part 6 introduces the assets folder, how to make static pages and understanding routes, and customizing your application error pages.  Now if you go through all 6 steps you will be spending a considerably longer time than 15 minutes.  The first 15 minutes shows you that yes you can get a Rails app up and functional in very little time.  The additional posts make your blog more appealing to look at and use, while teaching you several cool techniques.</p>
+
+<h3>Another Day, Another Blog : Octopress</h3>
+
+<p>Now, I had created two basic blogs but both seemed to be somewhat wanting.  The process of going through the tutorial was good but ultimately I wanted to have a final product with which I could continue.  I asked one of the former students at MakerSquare for suggestions and they told me to check out <a href="http://octopress.org">Octopress</a>.</p>
+
+<p>Octopress is a framework designed by Brandon Mathis for Jekyll, the blog aware static site generator that powers Github Pages. To start blogging with Jekyll, you have to write your own HTML templates, CSS, JavaScripts and set up your configuration. But with Octopress all of that is already taken care of, simply clone or fork Octopress, install dependencies and the theme, and you&rsquo;re set.</p>
+
+<p>Octopress felt really promising - their tag line is a blogging framework for hackers.  That sounded exactly like what I was looking for.  So, I had already cut my teeth on setting up the first two blogs.  Now I was using a framework to generate most of the underlying code.  Why re-invent the wheel?  I read through the documentation and in short order had created a third blog.  This time I even wrote a real post to go with it.  I was using git, ruby, javascript, yaml, css, html, and hosting it all on a web server.</p>
+
+<p><img title="The Octopress blog." alt="The Octopress blog" width="775" height="543" src="/images/octopress_blog.jpg" /></p>
+
+<h4>Errors</h4>
+
+<p>Octopress provides rake task to create new blog posts and new pages.</p>
+
+<p>Syntax</p>
+<pre class="highlight text">rake new_post[“title”]
+and
+rake new_page[super-awesome/page.html]
+</pre>
+<p>On my working setup, I found that from some combination of rake syntax and using the Z shell did not work correctly together. The work around I used was to put everything after the rake command in quotes, like so:</p>
+<pre class="highlight text">rake “new_post[title]”
+and
+rake “new_page[super-awesome/page.html]”
+</pre>
+<p>Also, avoid passing titles with punctuation to the rake command. The punctuation is not always parsed correctly and you can manually edit the displayed titles after the fact.</p>
+
+<p>For deployment, the documentation offers up three suggestions: Github pages, Heroku, and Rsync.  As I had already had some experiences using Heroku I went with that route.  I was even able to get the new domain name that I secured from .CO connected.  This felt like and all around win.  I was blogging like a hacker with my own domain name.</p>
+<pre class="highlight text">heroku create &lt;my-app-name&gt;
+git push heroku master
+heroku domains:add www.codehats.co
+</pre>
+<h3>The Final Blog? : Middleman</h3>
+
+<p>The next day, I met with my mentor, Matt Buck, at MakerSquare and discussed my blog creation efforts.  His opinion was that Octopress was near its end of life.  If you check the source on Github its last release was almost two years ago.  He suggested trying Middleman.  Besides having a more active release schedule, it also support tags out of the box.  It did not take much convincing for me to start over again.  My mentor even had a personal website template based on Middleman and Zurb Foundation.
+<a href="https://github.com/techpeace/personal-site-template">Matt Buck&rsquo;s Personal Website Template</a></p>
+
+<p>Middleman is a static site generator based on Sinatra. It incorporates dozens of templating languages (Haml, Sass, Compass, Slim, CoffeeScript, and more). It makes minification, compression, cache busting, Yaml data (and more) an easy part of your development cycle.</p>
+
+<p>This is the typical development cycle with Middleman:</p>
+
+<ul>
+<li>Run Middleman init projectname</li>
+<li>Start the server with middleman server</li>
+<li>Modify the files in the directory projectname while viewing them in your browser at http://localhost:4567</li>
+<li>When you&rsquo;re happy with the files, run middleman build</li>
+<li>Copy the generated static files from projectname/build to your webserver</li>
+</ul>
+
+<p>Having the server available while developing turns out to be critical as it allows quick review of changes (including automatic refresh on Firefox with the right plugin). This isn&rsquo;t as much of an issue with &ldquo;normal&rdquo; static site generators, but when you start adding partials, SCSS, Compass and the other goodies, that Middleman supports, server mode is invaluable.  Meaning that it can be very slow to build the site.</p>
+
+<p>It was also suggested to use GitHub pages rather than Heroku to host the new site.  The reason being as stated above that Heroku will idle down your web process delaying the loading of the site for your readers.  If you have a Github account then you have access to a Github Page of your own.  It actually took several minutes to understand what I needed to do to start with Github pages.  It seems like they just assume you know how to start.  I had to search for an <a href="http://readwrite.com/2013/11/27/github-pages-explained#awesm=~op7e5ZKmNCgi9h">outside explanation</a> on how to use their services.</p>
+
+<p>It was the equivalant of the push any key.  The first step is to create a repo called username.github.io.  This simple command was not obvious from reading the http://pages.github.com or their help.</p>
+
+<p>Matt&rsquo;s personal-site-template is easy to work with.  Just edit the default fields with your relevant details and add some CSS style to customize it.  But no process is pain free.  I ran into some errors with the suggested setup:</p>
+<pre class="highlight text">bundle exec middleman
+== The Middleman is loading
+Listen error: unable to monitor directories for changes.
+Please head to https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers
+for information on how to solve this issue.
+</pre>
+<p>The original Gemfile was missing some gems needed to run on a linux system.  I needed to include</p>
+<pre class="highlight text">gem &quot;rb-inotify&quot;
+gem &quot;therubyracer&quot;
+</pre>
+<p>After which, I still received the same Listen error.   This error was resolved by just following the suggestion of the warning message to increase the number of inotify watchers on my system.  I ran the following to see how many files I was asking it to watch:</p>
+<pre class="highlight text">ls -lR | grep ^- | wc -l
+32557
+</pre>
+<p>Then I looked up the current number of watchers and increased it&rsquo;s size in order to handle the number of files that were in my app.</p>
+<pre class="highlight text">cat /proc/sys/fs/inotify/max_user_watches
+8192
+sudo sysctl -w fs.inotify.max_user_watches=37000
+</pre>
+<p>But why did I have so many files?  I&rsquo;m not that prolific of a blogger.  The problem was that the number of files on my system kept growing as I experimented with bundling different gems. Almost all of those 30,000 files were under my vendor folder.  Running  &lsquo;bundle clean&rsquo; helped get rid of a significant number (14,000).  It still felt like I had too many files.  So I blew away my vendor folder all together and just ran &lsquo;bundle install&rsquo; anew.  The result was that there were 18,494 files, which still seems like a lot.  Taking into account the number of files that were in my app, I increased the inotify.max<em>user</em>watches accordingly.  This allows middleman server to run and respond to changes as you make them.</p>
+
+<p><img title="The Middleman based blog" alt="A middleman blog" width="773" height="601" src="/images/middleman_blog.jpg" /></p>
+
+<p>After all is said and done, I&rsquo;m generally pleased with the look of this site.  The pages have a mix of html, embedded ruby, and some yaml.  The process of creating the blog was more interesting to me currently than creating content for it.  Granted I have yet to try to create a lot of content.  My goal here was to show you the process I went through.  Maybe some of my missteps will help guide you. </p>
+
+<h2>The Future Blog : Ghost</h2>
+
+<p>And finally, because people never stopped recommending different approaches, it was also suggested to check out <a href="https://ghost.org/">Ghost</a>.  Ghost is a very new blogging platform, released as of October 2013. I&rsquo;m not ready to start again just yet but maybe you will give it a try.</p>
+
+<p>Cheers and Happy Coding.</p>
+
+    
+
+    
+
+    
+      <ul class="read_next">
+        <li><a href="/blog/2013/12/22/first.html"><i class='icon-caret-left'></i> First</a></li>
+        <li>&nbsp;</li>
+      </ul>
+
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_shortname = "";
+        (function() {
+         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+         dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+  </article>
+  <aside class="small-12 large-3 columns right">
+    <ul class="credit">
+      <li class="time">Posted on <time datetime="2013-12-30">Monday Dec 30, 2013</time></li>
+    </ul>
+    <ul class="tags">
+      
+        <li><a class="tiny button secondary round" href="/blog/tags/blogging.html">blogging</a></li>
+      
+        <li><a class="tiny button secondary round" href="/blog/tags/middleman.html">middleman</a></li>
+      
+        <li><a class="tiny button secondary round" href="/blog/tags/rails.html">rails</a></li>
+      
+        <li><a class="tiny button secondary round" href="/blog/tags/sinatra.html">sinatra</a></li>
+      
+        <li><a class="tiny button secondary round" href="/blog/tags/octopress.html">octopress</a></li>
+      
+    </ul>
+  </aside>
+</div>
+
+
+
+        </div>
+      </div>
+      <div id="root_footer"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="row" id="footer">
+      <div class="content">
+        <p>Thrown together haphazardly in Austin, Tx by <a href="mailto:qualquervalor@gmail.com?Subject=So%20I%20saw%20your%20site">Chris Henney</a></p>
+      </div>
+    </footer>
+
+    <!--[if lt IE 9]>
+    <div id="ie-warning-overlay">
+      <div id="ie-warning">
+        <h1>Did you know that your copy of Internet Explorer is terribly out of date?</h1>
+        <p>
+          To get the best possible experience using our website, we recommend that you upgrade to the latest version or use another web browser. 
+          Any of the following will provide a superior experience, not only on this site, but across the web.
+        </p>
+        <p>Just click one of the icons below to get to the download page.</p>
+        <ul>
+          <li>
+            <a href="http://microsoft.com/ie">
+              <img alt="Download Internet Explorer" width="100" height="100" src="/images/browser_ie.gif" />
+              <p>Internet Explorer 9+</p>
+            </a>
+          </li>
+          <li>
+            <a href="http://mozilla.org/firefox">
+              <img alt="Download Firefox" width="100" height="100" src="/images/browser_firefox.gif" />
+              <p>Firefox</p>
+            </a>
+          </li>
+          <li>
+            <a href="http://google.com/chrome">
+              <img alt="Download Chrome" width="100" height="100" src="/images/browser_chrome.gif" />
+              <p>Google Chrome</p>
+            </a>
+          </li>
+          <li>
+            <a href="http://apple.com/safari">
+              <img alt="Download Safari" width="100" height="100" src="/images/browser_safari.gif" />
+              <p>Safari</p>
+            </a>
+          </li>
+          <li>
+            <a href="http://opera.com">
+              <img alt="Download Opera" width="100" height="100" src="/images/browser_opera.gif" />
+              <p>Opera</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <![endif]-->
+
+    <script>
+      document.write('<script src=' +
+        ('__proto__' in {} ? "/javascripts/zepto.js" : "/javascripts/jquery.js") +
+        '><\/script>')
+    </script>
+
+    <!-- Javascript -->
+    <script src="/javascripts/application.js" type="text/javascript"></script>
+    
+
+    <script>
+      $(document).ready(function () {
+        
+        $(document).foundation();
+      });
+
+      // TODO: Set your Google Analytics code here
+      var _gaq=[['_setAccount','UA-46189380-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+
+  </body>
+</html>
+
