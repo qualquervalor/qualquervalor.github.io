@@ -5,10 +5,51 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2013-12-30T22:04:00Z</updated>
+  <updated>2014-01-18T22:04:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Ricochet Robots</title>
+    <link rel="alternate" href="/blog/2014/01/18/robots.html"/>
+    <id>/blog/2014/01/18/robots.html</id>
+    <published>2014-01-18T22:04:00Z</published>
+    <updated>2014-01-18T22:04:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p&gt;&lt;img title="Day of the Fan at Ludus." alt="Ludus" width="800" height="573" src="/images/2012-05-25_21-15-02_776.jpg"&gt;&lt;/p&gt;
+
+&lt;p&gt;While living in Sao Paulo, I would regularly hang out at a boardgame cafe, Ludus Luderia.  Ludus was a pretty cool place, boasting having over 800 boardgames available to play.  It was to boardgames what the Alamo Drafthouse is to films.  They would...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;&lt;img title="Day of the Fan at Ludus." alt="Ludus" width="800" height="573" src="/images/2012-05-25_21-15-02_776.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;While living in Sao Paulo, I would regularly hang out at a boardgame cafe, Ludus Luderia.  Ludus was a pretty cool place, boasting having over 800 boardgames available to play.  It was to boardgames what the Alamo Drafthouse is to films.  They would host tournaments, have various themed events, and was just a great place to eat/drink with friends.   Part of the appeal was that in Sao Paulo, many people would go out somewhere central to meet people rather than inviting them over to your home.  I lived in a small apartment that instantly felt crowded if two guests were over.  I would meet up with a set of regulars for Euroliga, their dedicated night for European strategy games.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="The game collection." alt="Ludus" width="800" height="600" src="/images/IMG_7115.JPG" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Normally a night at Ludus, involved pick up games of 3-6 people.  We played a lot of modern classic games like Settlers of Catan, Alhahmbra, Ticket to Ride, and Dominion.  People would often bring their own games to offer up for play.   Some of these would just be recent purchases and others would be games they personally designed and wanted people to play test.  There were some serial game designers who frequented the place.  Many of the games we played would take a few hours to play.  So, when it got closer to closing time people would not want to start one of these longer games.  Ricochet Robot was often one of the go to games for when you wanted to play something quick and fun.  &lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Ricochet Robots." alt="Ricochet Robots" width="1600" height="1200" src="/images/IMG_9193.JPG" /&gt;&lt;/p&gt;
+
+&lt;p&gt;It has a few intersting quirks that led to it being a very popular game at Ludus. &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt; There is no player limit&lt;/li&gt;
+&lt;li&gt; New players can jump in the middle of a game in progress&lt;/li&gt;
+&lt;li&gt; People can leave the game without ruining it for the others&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The board is a 16 by 16 grid, that has various walls spread throughout the board.  We places 5 robot pieces randomly on the board.  The robots can be moved by any player.  Robots have to move in straight lines as far as possible.  Robots will stop when they bump into another robot or a wall.&lt;br&gt;
+Every turn all players attempt to achieve the same goal, to move a specific robot to a specific square on the grid.  As part of a solution people can move any robot on the board.  All spaces on the board are achievable by some combination of moves. Normally, it takes between 5 to 13 moves to manipulate the specific robot to the desired square.    The players attempt to figure out all the moves in their head and then announce to all other players how many moves it took them to get to the desired square.  After the first person announces the number of moves it took them, a timer is started.  The other players have until the time has elapsed to announce a solution with fewer moves.   Finally, the winning player shows the solution by moving all the robots necessary as part of their solution.  The winning player is given a token to represent a point.  After each point, a new goal is announced and the play continues.  There are 17 goals in the game.  &lt;/p&gt;
+
+&lt;p&gt;The game is really a logic puzzle.  There are multiple solutions to every problem.  If you come up with a solution that takes 20+ moves, there is almost always a better way to achieve the goal.  Plus it can be a challenge to remember 20 moves in your head.  But sometimes, you can still win a point with a very convoluted path to get your robot to its destination, if nobody else can find a better answer.  There in lies the fun with playing with a group.  You are all racing to see who can come up with the answer the fastest.  Occasionally people would post on facebook a hard game board to offer it up as a challenge to their friends.  So, you then have a thread of conversation where people are playing the game virtually. If interested in checking Ricochet Robot is is availabe as a free download in the Android market.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Facebook Challenges" alt="Facebook Challenges" width="1338" height="1278" src="/images/ricochet7.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;I am happy to have added this game to my collection and look forward to office challenges.  Just set the board up in the office kitchen with a number of moves on a post-it note and await all challengers.
+Game On!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>The process of creating a blog</title>
     <link rel="alternate" href="/blog/2013/12/30/blogging.html"/>
